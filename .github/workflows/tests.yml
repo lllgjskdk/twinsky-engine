@@ -1,0 +1,18 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install .[test]
+      - uses: actions/cache@v5
+        with:
+          path: ~/.twinsky-engine
+          key: jpl-de440-1760-2560-d0efcafe
+      - run: python -m twinsky_engine.fetch
+      - run: pytest -q

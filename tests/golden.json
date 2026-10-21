@@ -1,0 +1,115 @@
+{
+ "births": [
+  {
+   "name": "singapore-1994",
+   "datetime": "1994-05-12T09:30:00",
+   "lat": 1.29,
+   "lng": 103.85,
+   "tz_offset": 8.0,
+   "timezone": "Asia/Singapore",
+   "gender": "female"
+  },
+  {
+   "name": "new-york-1985",
+   "datetime": "1985-12-01T23:40:00",
+   "lat": 40.71,
+   "lng": -74.01,
+   "tz_offset": -5.0,
+   "timezone": "America/New_York",
+   "gender": "male"
+  },
+  {
+   "name": "london-2001",
+   "datetime": "2001-03-21T06:05:00",
+   "lat": 51.51,
+   "lng": -0.13,
+   "tz_offset": 0.0,
+   "timezone": "Europe/London",
+   "gender": "female"
+  },
+  {
+   "name": "mumbai-1976",
+   "datetime": "1976-09-09T14:00:00",
+   "lat": 19.08,
+   "lng": 72.88,
+   "tz_offset": 5.5,
+   "timezone": "Asia/Kolkata",
+   "gender": "male"
+  }
+ ],
+ "charts": {
+  "singapore-1994": {
+   "bazi": "66c2b29a329f6cf730abe3aef4418405f222a27cfc96e5fa8bc42628ea400fb4",
+   "pillars": {
+    "year": "甲戌",
+    "month": "己巳",
+    "day": "戊戌",
+    "hour": "丙辰"
+   }
+  },
+  "new-york-1985": {
+   "bazi": "bf92a3537681f80b4543646b5bd0d4685a79d5b9f3a6405e91f4cb8dd2de02bb",
+   "pillars": {
+    "year": "乙丑",
+    "month": "丁亥",
+    "day": "甲戌",
+    "hour": "丙子"
+   }
+  },
+  "london-2001": {
+   "bazi": "332c0b7eefc529b1b31b28782439dbd0238dd1f86d5cf938321613f98daee9e7",
+   "pillars": {
+    "year": "辛巳",
+    "month": "辛卯",
+    "day": "癸未",
+    "hour": "乙卯"
+   }
+  },
+  "mumbai-1976": {
+   "bazi": "d67c3949c756b3bc09f770458b0e6bc82037138a8518ea975bcc03cddec07691",
+   "pillars": {
+    "year": "丙辰",
+    "month": "丁酉",
+    "day": "甲子",
+    "hour": "辛未"
+   }
+  }
+ },
+ "moons": {
+  "singapore-1994": 42.086107836,
+  "new-york-1985": 98.278605599,
+  "london-2001": 294.563019335,
+  "mumbai-1976": 332.522626687
+ },
+ "matches": [
+  {
+   "groom": "new-york-1985",
+   "bride": "singapore-1994",
+   "scores": {
+    "varna": 1.0,
+    "vashya": 1.0,
+    "tara": 1.5,
+    "yoni": 2.0,
+    "graha_maitri": 0.5,
+    "gana": 6.0,
+    "bhakoot": 7.0,
+    "nadi": 8.0
+   }
+  },
+  {
+   "groom": "mumbai-1976",
+   "bride": "london-2001",
+   "scores": {
+    "varna": 1.0,
+    "vashya": 2.0,
+    "tara": 1.5,
+    "yoni": 4.0,
+    "graha_maitri": 3.0,
+    "gana": 0.0,
+    "bhakoot": 7.0,
+    "nadi": 8.0
+   }
+  }
+ ],
+ "source": "TwinSky app core (tools/export_engine.py)"
+}

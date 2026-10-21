@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "twinsky-engine"
+version = "0.1.0"
+description = "BaZi (Four Pillars) charts, 36-point Ashtakoota matching and a NASA JPL DE440 ephemeris, MIT-licensed"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md", "src/twinsky_engine/_vendor/dashaflow/LICENSE"]
+authors = [{ name = "TwinSky", email = "support@twinsky-ai.com" }]
+requires-python = ">=3.11"
+keywords = ["bazi", "four pillars", "chinese astrology", "ashtakoota", "guna milan", "ephemeris", "de440", "swiss ephemeris alternative"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Software Development :: Libraries",
+]
+# Upgrade skyfield/jplephem deliberately: results can move by fractions of an arcsecond.
+dependencies = [
+    "jplephem>=2.24,<3",
+    "lunar-python>=1.4.8,<2",
+    "numpy>=2.0",
+    "pytz>=2024.1",
+    "skyfield>=1.53,<2",
+    "timezonefinder>=8.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.urls]
+Homepage = "https://twinsky-ai.com/?utm_source=pypi&utm_medium=project&utm_campaign=engine"
+Repository = "https://github.com/lllgjskdk/twinsky-engine"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+twinsky_engine = ["data/*.json", "_vendor/dashaflow/*.md", "_vendor/dashaflow/LICENSE"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]
